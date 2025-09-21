@@ -1,0 +1,3 @@
+Seat : b5
+Name : thinak prabsha
+Ticket price : 200

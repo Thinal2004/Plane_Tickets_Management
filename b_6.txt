@@ -1,0 +1,3 @@
+Seat : b6
+Name : thinfdk grt
+Ticket price : 150

@@ -67,10 +67,11 @@ public class PlaneManagement {
         System.out.println("    5) Print tickets information and total sales");
         System.out.println("    6) Search ticket");
         System.out.println("    0) Quit");
-        System.out.println("**************************************");
+        System.out.println("**************************************\n");
         System.out.print("Please select an option: ");
 
         int option = scanner.nextInt();
+        System.out.println("");
         return option;      //return the option number
     }
 
@@ -141,6 +142,7 @@ public class PlaneManagement {
             if(row_num != -1){
                 System.out.print("Enter the seat number :");
                 seat_num = scanner.nextInt() - 1;
+                System.out.println("");
 
                 checked = validate_seat(row_num,seat_num);      //call the method and return true if the seat and row is valid; unless return false
             }
@@ -174,9 +176,11 @@ public class PlaneManagement {
             ticket.save(row,seat_num);
 
             System.out.println("Seat booked successfully");
+            System.out.println("");
         }
         else{
             System.out.println("Seat has already booked");
+            System.out.println("");
         }
     }
 
@@ -198,6 +202,7 @@ public class PlaneManagement {
             if(row_num != -1){
                 System.out.print("Enter the seat number :");
                 seat_num = scanner.nextInt() - 1;
+                System.out.println("");
 
                 checked = validate_seat(row_num,seat_num);
             }
@@ -218,9 +223,11 @@ public class PlaneManagement {
             }
 
             System.out.println("Seat booking canceled successfully.");
+            System.out.println("");
         }
         else{
             System.out.println("Seat is not booked");
+            System.out.println("");
         }
     }
 
@@ -229,11 +236,13 @@ public class PlaneManagement {
             for(int seat=0;seat<seats[row].length;seat++){
                 if(seats[row][seat] == 0){
                     System.out.println("First available seat is : row " + (row+1) + " seat number " + (seat+1) );
+                    System.out.println("");
                     return;
                 }
             }
         }
         System.out.println("All the seats are booked.");
+        System.out.println("");
     }
 
     public static void show_seating_plan(){
@@ -248,6 +257,7 @@ public class PlaneManagement {
             }
             System.out.print("\n");
         }
+        System.out.println("");
     }
 
     public static void print_tickets_info(){
@@ -289,9 +299,11 @@ public class PlaneManagement {
                     tk.printInfo();
                 }
             }
+            System.out.println("");
         }
         else{
             System.out.println("This seat is available");
+            System.out.println("");
         }
 
     }
