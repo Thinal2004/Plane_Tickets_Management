@@ -1,3 +1,0 @@
-Seat : a4
-Name : thinl fdgt
-Ticket price : 200

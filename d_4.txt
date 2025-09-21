@@ -1,3 +1,0 @@
-Seat : d4
-Name : thinal fdjb
-Ticket price : 200

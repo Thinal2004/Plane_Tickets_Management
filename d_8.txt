@@ -1,3 +1,0 @@
-Seat : d8
-Name : thinal prabasha
-Ticket price : 150
